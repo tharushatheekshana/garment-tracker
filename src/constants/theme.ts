@@ -51,6 +51,35 @@ export const Fonts = Platform.select({
   },
 });
 
+// TrendyPass design tokens (Figma: TrendyPass – Gate Officer Mobile UI). Light only.
+export const Palette = {
+  bgPage: '#f3f1ea',
+  bgSurface: '#ffffff',
+  bgAccent: '#ffc629',
+  bgInverse: '#101317',
+  borderDefault: '#d9d5cb',
+  borderStrong: '#101317',
+  textPrimary: '#101317',
+  textMuted: '#6b7280',
+  textAccent: '#ffc629',
+  textOnAccentMuted: '#3a2e00',
+  status: {
+    info: { bg: '#e3ecfd', fg: '#1d5fe0' },
+    success: { bg: '#ddf3e6', fg: '#14864a' },
+    neutral: { bg: '#eceae3', fg: '#2b3038' },
+    danger: { bg: '#fde4e1', fg: '#d2281e' },
+  },
+} as const;
+
+// Family names match the keys loaded with useFonts in src/app/_layout.tsx.
+export const FontFamily = {
+  body: 'Barlow_700Bold',
+  bodyRegular: 'Barlow_400Regular',
+  bodySemiBold: 'Barlow_600SemiBold',
+  display: 'BarlowCondensed_800ExtraBold',
+  mono: 'JetBrainsMono_700Bold',
+} as const;
+
 export const Spacing = {
   half: 2,
   one: 4,
